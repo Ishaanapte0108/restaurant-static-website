@@ -1,0 +1,189 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Irish Grover", cursive; */
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1.3px;
+}
+/* #hero {
+  background-image: url("imgs/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#navbar {
+  display: flex;
+  background-color: black;
+  height: 87px;
+  width: 100%;
+  justify-content: space-between;
+}
+#navbar h1 {
+  color: white;
+}
+#navbar ul {
+  color: white;
+  list-style: none;
+}
+#pages ul {
+  display: flex;
+  justify-content: space-between;
+}
+#pages ul li {
+  padding: 20px;
+} */
+
+#header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  /* background-color: black; */
+  position: sticky;
+}
+
+#header h1,
+ul {
+  color: white;
+}
+#navbar {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a {
+  text-decoration: none;
+  color: white;
+  /* transition: ease 0.3s ease; */
+}
+#navbar li a:hover,
+#navbar li a.active {
+  color: #bf6e22;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #bf6e22;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#header h1::before {
+  content: "";
+  width: 2%;
+  height: 3px;
+  background-color: #bf6e22;
+  position: absolute;
+  left: 71px;
+  top: 15px;
+}
+#header h1::after {
+  content: "";
+  width: 2.35%;
+  height: 3px;
+  background-color: #bf6e22;
+  position: absolute;
+  transform: rotate(90deg);
+  left: 58px;
+  top: 29px;
+}
+
+/* .half-a-border-on-top {
+  border-top: 2px solid;
+  border-image: linear-gradient(to right, #bf6e22 50%, transparent 50%) 50% 1;
+  border-image: linear-gradient(to bottom, #bf6e22 50%, transparent 50%) 50% 1;
+} */
+
+#home {
+  /* background-image: url("imgs/clem-onojeghuo-zlABb6Gke24-unsplash.jpg");
+  background-image: url("imgs/hero-bg.jpg"); */
+  background-image: url("imgs/n4.jpg");
+  filter: brightness(60%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 88.5vh;
+  position: relative;
+}
+
+#hero {
+  position: absolute;
+  height: 75vh;
+  width: 35%;
+  background-color: #00100f;
+  margin-left: 10%;
+  border-radius: 15px;
+  background: black;
+  border: 2px solid #bf6e22;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  opacity: 1;
+  top: 25px;
+  padding-bottom: 30px;
+  filter: brightness(110%);
+}
+#header h1 {
+  font-size: 25px;
+}
+#hero #newhere h1 {
+  color: white;
+  padding: 20px;
+}
+#hero #newhere {
+  align-self: center;
+}
+
+#infoboxes {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+  margin-bottom: 30px;
+  padding: 0 10%;
+  width: 75%;
+  top: 65px;
+}
+/* #infoboxes input ::-webkit-input-placeholder {
+  color: #bf6e22;
+} */
+
+#infoboxes input {
+  color: #bf6e22;
+  height: 10.5%;
+}
+.btns {
+  background-color: #bf6e22;
+  border: none;
+  color: #fff;
+  width: fit-content;
+  align-self: flex-end;
+  padding: 5px;
+  border-radius: 5px;
+}
+#infoboxes button {
+  position: absolute;
+  top: 410px;
+  left: 340px;
+}
+#infoboxes input::placeholder {
+  color: #bf6e22;
+}
+#infoboxes input {
+  text-indent: 15px;
+}
